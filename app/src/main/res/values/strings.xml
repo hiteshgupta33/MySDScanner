@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My SD Scanner</string>
+    <string name="action_share">Share</string>
+    <string name="start_scan">Scan</string>
+
+    <!--Alert Dialog strings-->
+    <string name="alert_positive_button">Continue</string>
+    <string name="alert_negative_button">Exit</string>
+    <string name="permission_explanation">Application needs access to read the external storage</string>
+
+    <!--Progress Dialog strings-->
+    <string name="progress_message">Scanning External Storage, please wait...</string>
+
+    <!--Scan Result strings-->
+    <string name="title_biggest_files">Top Biggest Files</string>
+    <string name="title_average_size">Average size</string>
+    <string name="title_frequent_extensions">Most frequently used extensions</string>
+    <string name="welcome_text">Press floating scan button to begin scanning...</string>
+</resources>

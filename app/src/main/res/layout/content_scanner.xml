@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.ScannerActivity"
+    tools:showIn="@layout/activity_scanner">
+
+        <LinearLayout
+            android:id="@+id/layout_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin_small"
+            android:background="#fff"
+            android:elevation="@dimen/elevation_margin_small"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_padding">
+
+            <TextView
+                style="@style/TextViewTitleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/welcome_text" />
+
+        </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_biggest_files"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin_small"
+                android:background="#fff"
+                android:elevation="@dimen/elevation_margin_small"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_biggest_files_title"
+                    style="@style/TextViewTitleTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/title_biggest_files" />
+
+                <TextView
+                    android:id="@+id/tv_biggest_files"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_average_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin_small"
+                android:background="#fff"
+                android:elevation="@dimen/elevation_margin_small"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_average_size_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/title_average_size"
+                    style="@style/TextViewTitleTheme" />
+
+                <TextView
+                    android:id="@+id/tv_average_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_frequent_extensions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin_small"
+                android:background="#fff"
+                android:elevation="@dimen/elevation_margin_small"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_frequent_extensions_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/title_frequent_extensions"
+                    style="@style/TextViewTitleTheme" />
+
+                <TextView
+                    android:id="@+id/tv_frequent_extensions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="left"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
