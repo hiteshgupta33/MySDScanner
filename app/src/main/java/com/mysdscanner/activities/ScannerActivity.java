@@ -48,9 +48,6 @@ public class ScannerActivity extends AppCompatActivity implements ScannerTaskFra
 	private static final int ACTION_GOTO_SETTINGS = 3;
 
 	private static final String STATE_SCAN = "StateScan";
-	private static final String BIGGEST_FILES_STRING = "BiggestFiles";
-	private static final String AVERAGE_SIZE_STRING = "AverageSize";
-	private static final String FREQUENT_EXTENSIONS_STRING = "FrequentExtensions";
 	private static final String TAG_SCANNER_FRAGMENT = "SCANNER_FRAGMENT";
 
 	private ProgressDialog progressDialog;
@@ -269,7 +266,6 @@ public class ScannerActivity extends AppCompatActivity implements ScannerTaskFra
 				} else {
 					Log.v(TAG, permissions[0] + ": permission Denied");
 				}
-				return;
 			}
 		}
 	}
